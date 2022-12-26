@@ -1,0 +1,201 @@
+body>div {
+    width: 483px;
+    height: 298px;
+    background: #ded7db;
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* fade animation  */
+
+.fade {
+    opacity: 0.5;
+}
+
+.fade:hover {
+    opacity: 1;
+    background-image: url("img1.jpg");
+    padding: 16px 32px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: xxx-large;
+    color: white;
+}
+
+
+/*color animation */
+
+.color:hover {
+    text-decoration: line-through;
+}
+
+#couleur {
+    color: rgb(228, 8, 8);
+    background-color: aqua;
+    font-size: xxx-large;
+    background-clip: content-box;
+}
+
+
+/*unhook animation */
+
+.unhook:hover {
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: translate(12px, 50%);
+    -o-transform: rotate3d(10px, 40px);
+    background-color: #ea535d;
+}
+
+#detacher {
+    color: rgb(242, 236, 236);
+    font-size: xxx-large;
+}
+
+
+/*shrink animation */
+
+.shrink:hover {
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    backface-visibility: hidden;
+    background-color: orangered;
+}
+
+#retrecir {
+    color: white;
+    font-size: xxx-large;
+}
+
+
+/* hidden animation*/
+
+.hid:hover {
+    -webkit-transform: rotateZ(30deg);
+    -ms-transform: rotateZ(30deg);
+    transform: rotateZ(-89deg);
+    visibility: hidden;
+}
+
+#cacher {
+    color: red;
+    font-size: xxx-large;
+}
+
+
+/* adjust animation */
+
+.adjust:hover {
+    border-top-style: dotted;
+    background-color: #53a7ea;
+}
+
+#ajuster {
+    text-align: center;
+    font-size: xxx-large;
+}
+
+
+/*3D animation */
+
+
+/*--------------------------*/
+
+
+/*thread animation */
+
+.threed:hover {
+    box-shadow: 1px 1px #53a7ea, 2px 2px #53a7ea, 3px 3px #53a7ea;
+    -webkit-transform: translateY(-30px);
+    transform: translateX(-60px);
+    backface-visibility: hidden;
+    background-image: url("img2.jpg");
+}
+
+#shadow {
+    text-align: right;
+    font-size: xxx-large;
+    color: rebeccapurple;
+}
+
+
+/*direction animation */
+
+@-webkit-keyframes swing {
+    15% {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30% {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+    50% {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65% {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80% {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes swing {
+    15% {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30% {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+    50% {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65% {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80% {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+.direction:hover {
+    -webkit-animation: swing 1s ease;
+    animation: swing 1s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+#sens {
+    color: orange;
+    font-size: xxx-larger;
+}
+
+
+/*Border animation */
+
+.middle:hover {
+    box-shadow: inset 0 0 0 40px #ea535d;
+}
+
+#mid {
+    text-align: center;
+    font-size: xxx-larger;
+    color: white;
+}
